@@ -3,6 +3,20 @@
 <img src="https://raw.githubusercontent.com/methodbox/nmesh/master/nmesh-small.png" width="300">
 Nodejs, MongoDB, Express, SocketIO &amp; Handlebars boilerplate
 
+More to come on the readme. Here's the quick and dirty:
+
+##Goals
+Ultimately, the goal was to have a generator that isn't a generator - quick setup of an nodejs app with all my favorite parts: fast routing/middleware, nodejs, templating, CRUD and web sockets setup along with API ready to go and boilerplate for all of this.
+
+##Getting Started
+There are a few pre-requisites for **global install** via npm. This assumes you have Nodejs & npm installed. If not, visit https://nodejs.org to get started. Minimum version 0.12.x; Prefered is current 4.4.5. **Has not been tested with Nodejs >4.4.5.**
+<ul>
+	<li>MongoDB - https://docs.mongodb.com/manual/installation/ Hint: if you're on OS X just do the brew. **This is the only pre-req needed in both dev and production.**</li>
+	<li>BrowserSync - Auto-refresh the browser window when making changes
+	</li> https://github.com/BrowserSync/browser-sync ```$npm install -g browser-sync```.</li>
+	<li>Handlebars - This is for pre-compiling. You don't need this in production. ```$npm install -g handlebars```</li>
+</ul>
+
 ```
 File/Folder Tree:
 ├── api
