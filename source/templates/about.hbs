@@ -1,0 +1,27 @@
+<div class="container center" id="about-images">
+	<div class="row">
+		{{#each cards}}
+		<div class="col s4">
+			<div class="card medium" style="overflow: hidden;">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img src="{{img}}">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">{{cardTitle}}<i class="material-icons right">info_outline</i></span>
+
+          <p><a href="#!">{{link}}</a></p>
+        </div>
+
+        <div class="card-action">
+          <a href="#">{{link}}</a>
+        </div>
+
+        <div class="card-reveal" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4">{{cardTitle}}<i class="material-icons right">close</i></span>
+          <p>{{cardDescription}}</p>
+        </div>
+      </div>
+		</div>
+		{{/each}}
+	</div>
+</div>
