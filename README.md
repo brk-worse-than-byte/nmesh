@@ -42,21 +42,21 @@ There are 3 primary and 2 secondary directories you will work with. The rest are
 * API - Just like it says, this is where the API boilerplate config resides. By default, anything you write to Mongo can be accessed via GET/POST already.
 * DB - This is where the default contact form CRUD is handled and where database-specific configuration should go, like defining a schema. No schema is used by default. A suggestion is in the api_schema.js for using a schema for specific data that you want to be accessible via API. Just a suggestion, not a requirement.
 
-```
-File/Folder Tree:
+
+###File/Folder Tree:
 **├── api**
 │   └── apiConfig.js
-├── app.js
+**├── app.js**
 **├── db**
 │   ├── api_schema.js
 │   └── formCrud.js
 **├── gulpfile.js**
 ├── package.json
-├── public
-│   ├── css
+**├── public**
+│   **├── css**
 │   │   └── styles.css
 │   ├── favicon.ico
-│   ├── img
+│   **├── img**
 │   │   ├── img1.jpg
 │   │   ├── img2.jpg
 │   │   ├── img3.jpg
@@ -64,22 +64,22 @@ File/Folder Tree:
 │   │   ├── img5.jpg
 │   │   ├── img6.jpg
 │   │   └── img7.jpg
-│   └── js
+│   **└── js**
 │       └── bundle.min.js
-├── source
-│   └── templates
+**├── source**
+│   **└── templates**
 │       ├── about.hbs
 │       ├── contact.hbs
 │       ├── home.hbs
-│       ├── layouts
-│       │   ├── js
+│       **├── layouts**
+│       │   **├── js**
 │       │   │   ├── mobile_nav.js
 │       │   │   ├── partials.js
 │       │   │   ├── render.js
 │       │   │   └── templates.js
-│       │   └── main.html
+│       │   **└── main.html**
 │       ├── nav.hbs
-│       ├── partials
+│       **├── partials**
 │       │   └── _exampleForm.hbs
 │       └── projects.hbs
 └── views
@@ -93,4 +93,4 @@ File/Folder Tree:
     │   └── main.html
     ├── partials
     └── projects.handlebars
-  ```
+  
