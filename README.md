@@ -1,7 +1,8 @@
 # nmesh 
 
 <img src="https://raw.githubusercontent.com/methodbox/nmesh/master/nmesh-small.png" width="300">
-Nodejs, MongoDB, Express, SocketIO &amp; Handlebars boilerplate
+
+#Nodejs, MongoDB, Express, SocketIO &amp; Handlebars boilerplate
 
 More to come on the readme. Here's the quick and dirty:
 
