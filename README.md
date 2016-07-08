@@ -33,7 +33,7 @@ There are 3 primary and 2 secondary directories you will work with. The rest are
 ###Primary Directories
 * Source - This is where you will spend most of your time. The primary layout is ```main.html``` - if you change this file name, it must be updated in ```app.js```, too. Templates/Partials created here are pre-compiled when you make a change to them. No need to restart the app.
 * Public - static files and compiled JS (and CSS if you're precompiling SASS/SCSS) go in this directory. 
-* All output ends up in the Views or Public directory. Only files in source or public should be directly modified.
+* **All output ends up in the Views or Public directory. Only files in source or public should be directly modified.**
 * Root - 
  - app.js - Express config, routes and most require() settings are here. The app must be restarted for these changes to take effect
  - gulpfile.js - Just what it says - this is your task runner. App must be restarted when this is changed.
@@ -44,13 +44,13 @@ There are 3 primary and 2 secondary directories you will work with. The rest are
 
 ```
 File/Folder Tree:
-├── api
+**├── api**
 │   └── apiConfig.js
 ├── app.js
-├── db
+**├── db**
 │   ├── api_schema.js
 │   └── formCrud.js
-├── gulpfile.js
+**├── gulpfile.js**
 ├── package.json
 ├── public
 │   ├── css
