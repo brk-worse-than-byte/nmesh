@@ -1,6 +1,6 @@
 # nmesh 
 
-![alt tag]: (https://raw.githubusercontent.com/methodbox/nmesh/master/nmesh-small.png)
+![Alt text]: (https://raw.githubusercontent.com/methodbox/nmesh/master/nmesh-small.png)
 Nodejs, MongoDB, Express, SocketIO &amp; Handlebars boilerplate
 
 ```
