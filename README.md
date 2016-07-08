@@ -17,7 +17,7 @@ There are a few pre-requisites for __global install__ via npm. This assumes you 
 **This is the only pre-req needed in both dev and production.**
 	
 + BrowserSync - Auto-refresh the browser window when making changes. https://github.com/BrowserSync/browser-sync. 
-```$npm install -g browser-sync
+```$npm install -g browser-sync```
 
 + Handlebars - This is for pre-compiling. You don't need this in production.
 ```$npm install -g handlebars```
