@@ -8,20 +8,16 @@ More to come on the readme. Here's the quick and dirty:
 ##Goals
 Ultimately, the goal was to have a generator that isn't a generator - quick setup of an nodejs app with all my favorite parts: fast routing/middleware, nodejs, templating, CRUD and web sockets setup along with API ready to go and boilerplate for all of this.
 
--test
--test2
--test3
-
 ##Getting Started
 There are a few pre-requisites for __global install__ via npm. This assumes you have Nodejs & npm installed. If not, visit https://nodejs.org to get started. Minimum version 0.12.x; Prefered is current 4.4.5. Has not been tested with Nodejs >4.4.5.
 
-+MongoDB - https://docs.mongodb.com/manual/installation/ Hint: if you're on OS X just do the brew. 
++ MongoDB - https://docs.mongodb.com/manual/installation/ Hint: if you're on OS X just do the brew. 
 This is the only pre-req needed in both dev and production.
 	
-*BrowserSync - Auto-refresh the browser window when making changes. https://github.com/BrowserSync/browser-sync. 
+* BrowserSync - Auto-refresh the browser window when making changes. https://github.com/BrowserSync/browser-sync. 
 	
 	
-*Handlebars - This is for pre-compiling. You don't need this in production.
+* Handlebars - This is for pre-compiling. You don't need this in production.
 
 ```
 File/Folder Tree:
