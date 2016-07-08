@@ -11,9 +11,12 @@ Ultimately, the goal was to have a generator that isn't a generator - quick setu
 ##Getting Started
 There are a few pre-requisites for **global install** via npm. This assumes you have Nodejs & npm installed. If not, visit https://nodejs.org to get started. Minimum version 0.12.x; Prefered is current 4.4.5. **Has not been tested with Nodejs >4.4.5.**
 
-	<li>MongoDB - https://docs.mongodb.com/manual/installation/ Hint: if you're on OS X just do the brew. **This is the only pre-req needed in both dev and production.**</li>
-	<li>BrowserSync - Auto-refresh the browser window when making changes. https://github.com/BrowserSync/browser-sync.</li> ```$npm install -g browser-sync```
-	<li>Handlebars - This is for pre-compiling. You don't need this in production.</li>
+	*MongoDB - https://docs.mongodb.com/manual/installation/ Hint: if you're on OS X just do the brew. **This is the only pre-req needed in both dev and production.**
+	
+	*BrowserSync - Auto-refresh the browser window when making changes. https://github.com/BrowserSync/browser-sync. 
+	```$npm install -g browser-sync```
+	
+	*Handlebars - This is for pre-compiling. You don't need this in production.
 	```$npm install -g handlebars```
 
 
