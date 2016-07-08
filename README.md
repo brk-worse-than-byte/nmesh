@@ -4,8 +4,6 @@
 
 #Nodejs, MongoDB, Express, SocketIO &amp; Handlebars boilerplate
 
-More to come on the readme. Here's the quick and dirty:
-
 ##Goals
 Ultimately, the goal was to have a generator that isn't a generator - quick setup of an nodejs app with all my favorite parts: fast routing/middleware, nodejs, templating, CRUD and web sockets setup along with API ready to go and boilerplate for all of this.
 
