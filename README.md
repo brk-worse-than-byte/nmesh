@@ -1,4 +1,4 @@
-# nmesh
+# nmesh [logo]: https://github.com/methodbox/nmesh/blob/master/nmesh-small.png
 Nodejs, MongoDB, Express, SocketIO &amp; Handlebars boilerplate
 
 ```
