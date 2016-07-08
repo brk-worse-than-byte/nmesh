@@ -13,7 +13,7 @@ There are a few pre-requisites for **global install** via npm. This assumes you 
 <ul>
 	<li>MongoDB - https://docs.mongodb.com/manual/installation/ Hint: if you're on OS X just do the brew. **This is the only pre-req needed in both dev and production.**</li>
 	<li>BrowserSync - Auto-refresh the browser window when making changes
-	</li> https://github.com/BrowserSync/browser-sync ```$npm install -g browser-sync```.</li>
+	https://github.com/BrowserSync/browser-sync ```$npm install -g browser-sync```.</li>
 	<li>Handlebars - This is for pre-compiling. You don't need this in production. ```$npm install -g handlebars```</li>
 </ul>
 
