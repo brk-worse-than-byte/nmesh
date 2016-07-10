@@ -1,25 +1,25 @@
 'use strict';
 
-const gulp = require('gulp');
-const gls = require('gulp-live-server');
-const browserSync = require('browser-sync');
+var gulp = require('gulp');
+var gls = require('gulp-live-server');
+var browserSync = require('browser-sync');
 //compiling handlebars templates
-const handlebars = require('gulp-handlebars');
-const wrap = require('gulp-wrap');
-const declare = require('gulp-declare');
-const concat = require('gulp-concat');
-const path = require('path');
+var handlebars = require('gulp-handlebars');
+var wrap = require('gulp-wrap');
+var declare = require('gulp-declare');
+var concat = require('gulp-concat');
+var path = require('path');
 //minifying JS
-const useref = require('gulp-useref');
-const gulpif = require('gulp-if');
-const uglify = require('gulp-uglify');
+var useref = require('gulp-useref');
+var gulpif = require('gulp-if');
+var uglify = require('gulp-uglify');
 //start express server & app
-gulp.task('startExp', () => {
-    const server = gls.new('app.js');
+gulp.task('startExp', function() {
+    var server = gls.new('app.js');
     server.start();
 });
 
-gulp.task('templates', () => {
+gulp.task('templates', function(){
   gulp.src('source/templates/*.hbs')
     .pipe(handlebars({
       handlebars: require('handlebars')
@@ -33,14 +33,14 @@ gulp.task('templates', () => {
     .pipe(gulp.dest('source/templates/layouts/js/'));
 });
 
-gulp.task('partials', () => {
+gulp.task('partials', function () {
 	gulp.src(['source/templates/partials/_*.hbs'])
 	  .pipe(handlebars({
 	      handlebars: require('handlebars')
 	    }))
 	  .pipe(wrap('Handlebars.registerPartial(<%= processPartialName(file.relative) %>, Handlebars.template(<%= contents %>));', {}, {
 	    imports: {
-	      processPartialName: (fileName) => {
+	      processPartialName: function(fileName) {
 	        // Strip the extension and the underscore 
 	        // Escape the output with JSON.stringify 
 	        return JSON.stringify(path.basename(fileName, '.js').substr(1));
@@ -52,7 +52,7 @@ gulp.task('partials', () => {
 });
 
 //combine all the js and output updated main.html with minified js bundle.min.js tag
-gulp.task('smash', () => {
+gulp.task('smash', function() {
 	return gulp.src('source/templates/layouts/main.html')
 		.pipe(useref())
 		.pipe(gulpif('*.js', uglify()))
@@ -60,7 +60,7 @@ gulp.task('smash', () => {
 		.pipe(gulpif('*.html', gulp.dest('views/layouts')));
 });
 
-gulp.task('watch', ['browser-sync', 'templates', 'partials', 'smash'], () => {
+gulp.task('watch', ['browser-sync', 'templates', 'partials', 'smash'], function() {
 	gulp.watch('source/templates/partials/_*.hbs', ['partials']);
 	gulp.watch('source/templates/*.hbs', ['templates']);
 	gulp.watch('source/templates/layouts/*.html', ['templates']);
@@ -68,10 +68,10 @@ gulp.task('watch', ['browser-sync', 'templates', 'partials', 'smash'], () => {
 });
 
 //run everything
-gulp.task('default', ['startExp', 'smash', 'browser-sync', 'watch'], () => {
+gulp.task('default', ['startExp', 'smash', 'browser-sync', 'watch'], function () {
 });
 
-gulp.task('browser-sync', () => {
+gulp.task('browser-sync', function() {
 	browserSync.init(null, {
 		proxy: "http://localhost:5000",
         files: [

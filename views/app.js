@@ -3,21 +3,20 @@
 const express = require('express');
 const app = express();
 const favicon = require('serve-favicon');
+app.use(favicon(__dirname + 'favicon.ico'));
 //routing
 const router = express.Router();
 //handlebars for view templates & rendering
 const handlebars = require('handlebars');
 const exphbs = require('express-handlebars');
-//mongodb
-var db//using var as 'db' is empty variable
+//mongodb 
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const db
 //API
-const apiInit = require('./api/apiConfig');
-apiInit(app);
-
+require('./api/apiConfig')(app);
 
 MongoClient.connect('mongodb://localhost:27017/contacts', (err, database) => {
 	if (err) return console.log(err);
